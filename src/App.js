@@ -17,9 +17,9 @@ class App extends Component {
 
     deleteCharHandler = (charIndex) => {
         const currentText = [...this.state.text.split('')];
-        currentText.splice(charIndex,1);
-        this.setState({text: currentText.join('')});
-    }
+        currentText.splice(charIndex, 1);
+        this.setState({ text: currentText.join('') });
+    };
 
     render() {
         let charList = null;
@@ -34,7 +34,7 @@ class App extends Component {
         return (
             <div className="App">
                 <br />
-                <input type="text" onChange={this.getText} value={this.state.text}/>
+                <input type="text" onChange={this.getText} value={this.state.text} />
                 <p>Text length: {this.state.text.length}</p>
                 <ValidationComponent textLength={this.state.text.length} />
                 {charList}

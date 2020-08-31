@@ -9,7 +9,11 @@ const CharComponent = (props) => {
         border: '1px solid black',
     };
 
-    return (<span style={style} onClick={props.click}>{props.letter}</span>)
+    return (
+        <span style={style} onClick={props.click}>
+            {props.letter}
+        </span>
+    );
 };
 
 export default CharComponent;
