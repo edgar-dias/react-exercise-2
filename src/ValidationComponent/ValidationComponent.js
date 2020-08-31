@@ -9,7 +9,7 @@ const ValidationComponent = (props) => {
         validationText = <p>Text long enough</p>;
     }
 
-    return <p>{validationText}</p>;
+    return <div>{validationText}</div>;
 };
 
 export default ValidationComponent;

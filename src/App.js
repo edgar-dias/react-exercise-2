@@ -26,7 +26,7 @@ class App extends Component {
         charList = (
             <div>
                 {this.state.text.split('').map((char, index) => {
-                    return <CharComponent letter={char} click={() => this.deleteCharHandler(index)} />;
+                    return <CharComponent letter={char} click={() => this.deleteCharHandler(index)} key={index}/>;
                 })}
             </div>
         );

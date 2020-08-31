@@ -10,9 +10,9 @@ const CharComponent = (props) => {
     };
 
     return (
-        <span style={style} onClick={props.click}>
+        <div style={style} onClick={props.click}>
             {props.letter}
-        </span>
+        </div>
     );
 };
 
